@@ -11,3 +11,18 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
+// animação de entrada nas seções (IntersectionObserver)
+const section = document.querySelector('.section');
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    },
+    { threshold: 0.15}
+);
+
+sections.forEach(sec => observer.observe(sec)); 
