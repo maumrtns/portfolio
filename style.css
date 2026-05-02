@@ -95,4 +95,26 @@ body {
     color: var(--primary);
 }
 
+/* Skills grid */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    border: 1px solid #1e2333;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform .2s, border-color .2s;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+}
+
 
