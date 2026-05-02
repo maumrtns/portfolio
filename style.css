@@ -76,3 +76,23 @@ body {
     font-size: 1.3rem;
 }
 
+/* Botões */
+
+.btn {
+    padding: .75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+}
+
+.btn-outline {
+    border: 2px solid var(--primary); 
+    color: var(--primary);
+}
+
+
