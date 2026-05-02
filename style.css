@@ -1,0 +1,12 @@
+/* Váriaveis de tema global  */
+:root {
+    --primary: #4f9cf9;
+    --dark: #0a0f1a;
+    --text: #e2e8f4;
+    --muted: #7a859e;
+    --card-bg: #11141b;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0;}
+body { font-family: 'Segoe UI', sans-serif; background: var(--dark); color: var(--text);}
+
