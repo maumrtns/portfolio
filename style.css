@@ -22,5 +22,10 @@ body { font-family: 'Segoe UI', sans-serif; background: var(--dark); color: var(
 .nav-links a:hover { color: var(--primary); }
 .menu-btn { display: none; background: none;    border: none; font-size: 1.5rem; cursor: pointer; color: var(--text);}
 
+/* Hero */
+
+.hero { min-height: 90vh; display: flex; align-items: center; padding: 2rem; }
+.hero { font-size: clamp(2rem, 5vw, 3.5rem); color: #fff; }
+.hero-role{ color: var(--primary); font-size: 1.3rem; }
 
 
