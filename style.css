@@ -91,7 +91,7 @@ body {
 }
 
 .btn-outline {
-    border: 2px solid var(--primary); 
+    border: 2px solid var(--primary);
     color: var(--primary);
 }
 
@@ -117,4 +117,25 @@ body {
     border-color: var(--primary);
 }
 
+/* Responsivo (Mobile first) */
 
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: var(--card-bg);
+        padding: 1rem;
+    }
+
+    .nav-links.open {
+        display: block;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
